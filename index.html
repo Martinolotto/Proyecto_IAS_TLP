@@ -1,0 +1,106 @@
+<!-- 
+Página: Inicio
+Descripción: Página principal del sitio web del IAS, lo primero que se mostrara al entrar.
+Autor: Martino Benjamín Lotto Vera
+Fecha: 30-03-2026 
+-->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto de Asistencia Social - IAS</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+   <body> <!-- para poner dentro todo el contenido de la pagina de inicio -->
+    
+    <!-- Fundamentación de la semántica:
+     uso <header> para inicio y <footer para cierre de la página
+      <nav> para organizar el menu de navegación, y main> para el contenido 
+     principal que lo organizo con <section> para que no este todo suelto -->
+
+   <!-- id para darle estilo a los titulos y controlar la ubicación de la imagen -->
+   <header > <!-- encabezado 
+    dentro dos titulos y logo-->
+    
+    <img src="assets/img/logo-png.png" alt="logo oficial del IAS">
+    <h1>Instituto de Asistencia Social - IAS</h1>
+    <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+    
+   </header>
+    <!-- nav para menu de navegación-->
+   <nav id="menu_principal"><!--id para darle estilo -->
+    <ul><!--  para agrupar todo en el menu de navegación y no esten sueltos -->
+        <!-- li para poder dar esilo por separado, para trabajar con cada uno por separado-->
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="html/sobre-ias.html">Sobre el IAS</a></li>
+        <li> <a href="html/funciones.html">Funciones</a></li>
+        <li><a href="html/contacto.html">Contacto</a></li>
+    </ul>
+   </nav>
+
+   <main><!--Contenido principal -->
+
+    <!-- sección de bienvenida -->
+
+    <section class="bienvenido"> <!-- Clase para el grupo principal -->
+
+      <h2 class="titulo_b">Bienvenido</h2>
+
+      <!-- div para separar el texto e img que va ir ubicada hacia la izquierda para poder mover toda esta division solamente-->
+        <div class="texto_info"> <!-- Clase para la columna de texto -->
+            
+         
+         <h3>¿Qué es el IAS?</h3>
+
+         <!-- enfasis en el nombre -->
+         <p>El <em>Instituto de Asistencia Social</em> (IAS) es el organismo oficial de la Provincia de Formosa responsable de la regulación, administración y control de todos los juegos de azar y actividades lúdicas legales en el territorio provincial.<br>
+         El objetivo principal del Instituto no es solo fiscalizar las apuestas, sino garantizar que los recursos generados por esta actividad se transformen en beneficios directos para los formoseños.</p>
+          
+         <img class="imagen_juego" src="assets/img/images.png" alt="imagen representativa del juego seguro - IAS">
+
+         <h3>¿Cuáles son sus funciones principales?</h3>
+         <ul>
+              <li>
+                 <strong>Acción Social y Salud:</strong>
+                 <p>Los fondos recaudados se destinan al financiamiento de programas de asistencia social, equipamiento de hospitales, insumos médicos y apoyo a establecimientos educativos.</p>
+              </li>
+              <li>
+                 <strong>Transparencia y Control:</strong>
+                 <p>El organismo asegura que todos los sorteos y juegos oficiales se realicen bajo estrictas normas de legalidad, combatiendo el juego clandestino para proteger al apostador.</p>
+              </li>
+                <li>
+                 <strong>Promoción del Juego Responsable:</strong>
+                 <p>Se implementan políticas de prevención y asistencia para que el azar sea exclusivamente una forma de entretenimiento sano, evitando conductas de riesgo o adictivas.</p>
+                </li>
+         </ul>
+        </div><!-- todo este div hacia la izquierda -->
+
+        <!-- figure hacia la derecha
+         afuera del div para poder moverlo independientemente-->
+         <!-- uso figure para la imagen informativa -->
+         <figure class="imagen-sede"> <!-- Clase para la columna de la imagen -->
+           <img src="assets/img/sede-IAS.jpg" alt="Edificio central del IAS, Formosa">
+           <!-- figcaption para el epígrafe, hago enfasis con em -->
+           <figcaption><em>Sede central del IAS - Formosa, Av. 25 de Mayo</em></figcaption>
+        </figure>
+
+    </section>
+   </main>
+
+   <!-- pie de pagina -->
+   <footer> 
+    <!--entidad html  &copy-->
+    <p>&copy; 2026 Instituto de Asistencia Social - Formosa. Todos los derechos reservados.</p>
+    <img src="assets/img/logo-png.png" alt="logo oficial del IAS">
+   </footer>
+
+
+  </body>
+</html>
+
+
+
+

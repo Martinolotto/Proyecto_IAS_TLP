@@ -1,0 +1,111 @@
+<!-- 
+Página: Información de Contacto
+Descripción: Formulario de consultas y datos de ubicación del IAS.
+Autor: Martino Benjamín Lotto Vera
+Fecha: 6-04-2026 
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Instituto de Asistencia Social</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/img/logo-png.png" alt="logo oficial del IAS">
+        <h1>Instituto de Asistencia Social - IAS</h1>
+        <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+    </header>
+
+    <nav id="menu_principal">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="sobre-ias.html">Sobre el IAS</a></li>
+            <li><a href="funciones.html">Funciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contacto</h2>
+
+        <!-- Sección de datos de contacto usando <address> para información de ubicación -->
+        <section>
+            <h3>Nuestras Oficinas</h3>
+            <address>
+                <p>Dirección: Calle Belgrano 550, Formosa Capital, Argentina.</p>
+                <p>Teléfono: <a href="tel:+54370443xxxx">3704 - 43xxxx</a></p>
+                <!-- Uso de mailto: para abrir el gestor de correos automáticamente -->
+                <p>Email: <a href="mailto:consultas@ias.gob.ar">consultas@ias.gob.ar</a></p>
+            </address>
+        </section>
+
+        <!-- Formulario de contacto con método POST -->
+        <section>
+            <h3>Envianos tu consulta</h3>
+            <!-- id'formulario-contacto' es para darle estilos específicos en el CSS -->
+            <form action="#" method="post" id="formulario-contacto">
+                
+                <!-- Cada campo tiene su <label> para accesibilidad y vinculación con el ID del input -->
+                <p>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </p>
+
+                <p>
+                    <label for="tel">Teléfono de contacto:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="3704-xxxxxx">
+                </p>
+
+                <p>
+                    <label for="motivo">Motivo de consulta:</label>
+                    <!-- El elemento <select> permite crear una lista desplegable de opciones -->
+                    <select id="motivo" name="motivo">
+                        <option value="institucional">Información Institucional</option>
+                        <option value="juego">Juego Responsable</option>
+                        <option value="social">Acción Social / Ayuda</option>
+                        <option value="otro">Otros motivos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <!-- Textarea se usa para bloques de texto largos, a diferencia del input text -->
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí aquí tu mensaje..." required></textarea>
+                </p>
+
+                <!-- Botón de envío que procesa el formulario -->
+                <button type="submit" class="btn-enviar">Enviar Consulta</button>
+            </form>
+        </section>
+
+        <!-- Elemento <details> un bloque de información expandible -->
+        <section>
+            <details>
+                <summary>Ver horarios de atención especiales</summary>
+                <p>Durante festividades o feriados provinciales, nuestras oficinas de atención al público operan de 08:00 a 11:00 hs únicamente.</p>
+            </details>
+        </section>
+
+        <!-- Mapa de ubicación -->
+        <section>
+            <h3>Ubicación en el Mapa</h3>
+            <img src="../assets/img/IAS-Mapa.png" alt="Mapa de ubicación central del IAS en Formosa" width="600">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Instituto de Asistencia Social - Formosa. Todos los derechos reservados.</p>
+        <img src="../assets/img/logo-png.png" alt="logo oficial del IAS">
+    </footer>
+</body>
+</html>

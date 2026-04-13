@@ -1,0 +1,482 @@
+/*
+Archivo: style.css
+Proyecto: Sitio Web IAS
+Descripción: Estilos generales para el sitio del IAS (Versión Flujos Tradicionales)
+Autor: Martino Benjamín Lotto Vera
+Fecha: 06-04-2026
+----------------------
+Paleta de colores: 
+#006400 
+#2c3e50 
+#f4f4f4 fondo
+*/
+
+/*cambios a toda el sitio
+---------------------------------------*/
+body { /* estilo a todo el contenido del sitio*/
+    /* tipo de letra  */
+    font-family: Arial, Helvetica, sans-serif; 
+    /*fondo*/
+    background-color: #f4f4f4;
+    /*color de letras*/
+    color: #333;
+    /*espaciado*/
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos a los titulos*/
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/*estilo a los parrafos*/
+p {
+    line-height: 1.6; /*interlineado*/
+    text-align: justify; /*orden del texto*/
+}
+
+/*estilo a los enlaces nav*/
+a {
+    color: #94B055;
+    text-decoration: none;
+}
+/*-------------------------------*/
+
+/* Estilos para el menu principal*/
+
+/*para la lista*/
+#menu_principal ul {
+    list-style-type: none; /*sacar puntos*/
+    background-color:#2c3e50;
+    padding: 15px 0px; /*alto del renglón*/
+    text-align: center;
+    margin: 0px;
+    overflow: hidden; /*  Para que el fondo cubra a los elementos con float */
+    width: 100%;
+}
+
+/*para cada elemento*/
+#menu_principal ul li{
+    float: left; /* para ponerlos uno al lado del otro */
+    width: 18%;
+    text-align: center;
+}
+#menu_principal ul li:first-child {
+    margin-left: 14%; /* para que el primer elemento no quede pegado al borde y centramos el resto*/
+}
+
+/*a cada link*/
+#menu_principal ul li a{
+    color:white;
+    /*para recuadro*/
+    border: 2px solid #F5F5F0; /*ancho y color*/
+    padding: 8px 14px; /*separación del texto*/
+    border-radius: 9px;
+    transition: 0.3s; /*transicion al color mas despacio*/
+}
+
+#menu_principal ul li a:hover {/*al pasar el mouse*/
+    text-decoration: underline;
+    color: #2c3e50;
+    background-color: #94B055;
+}
+
+/*--------------------------------
+Estilos para el encabezado*/
+header {
+    background-color: #61892F;
+    text-align: center;
+    border-bottom: 4px solid #f4d743; /*linea abajo de h2*/
+    overflow: hidden; /*para que se ajuste al tamaño de el resto*/
+    width: 100%;
+}
+
+header img {
+    float: left; /*para que quede a la izquierda del encabezado*/
+    width: 90px;
+    height: auto;
+    margin-left: 33%; /*  para que no se pegue al borde */
+    margin-top: 15px;/*para que no se pegue al borde de arriba*/
+    margin-bottom: 10px;
+}
+
+header h1 {
+    background-color: #61892F;
+    float: left; /* Reemplaza display: inline-block */
+    color: #ffffff;
+    padding: 20px;
+    margin: 0px;
+    font-size: 2.2rem; /*tamaño texto*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;/* Ajusta el ancho */
+}
+
+
+header h2 {
+    background-color: #8ca94d;
+    color: #222222;
+    padding: 20px;
+    margin: 0px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    clear: both; /* para que el h2 siempre quede debajo del h1 e img */
+}
+
+/*----------------------------
+
+
+
+Estilo a las clases del main del index.html*/
+
+.titulo_b {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio abajo del título */
+    clear: both;
+}
+
+.bienvenido {
+    overflow: hidden; /* para que no se mueva todo el bloque */
+    padding: 10px;
+    text-align: center;
+}
+
+.texto_info {
+    float: left; /*para mover el bloque*/
+    width: 55%;           /* tamaño que ocupa */
+    margin-left: 15px;    /* espacio desde la izquierda */
+    padding: 20px;        /* Espacio entre el texto y el borde del cuadro */
+    border: 2px solid #61892F; /* cuadro  */
+    background-color: #ffffff; /* Fondo */
+    border-radius: 10px;
+    text-align: center;
+}
+.texto_info ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+.texto_info p {
+    text-align: center;
+}
+.texto_info h3{
+    text-align: center;
+}
+
+.imagen_juego {
+    margin: 15px auto; /* centra con auto*/
+    width: 200px; /* tamaño de la imagen*/
+}
+
+.imagen-sede {
+    float: right; 
+    width: 35%;
+    margin-top: 50px;    /* Para bajarla y que quede centrada con el cuadro de al lado */
+    text-align: center;   /* Centra el epígrafe */
+}
+
+.imagen-sede img {
+    width: 100%;
+    border-radius: 5px; /*bordes redondeados*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra */
+}
+
+/*-----------------------
+Estilos del pie de pagina*/
+footer {
+    background-color: #61892F;
+    color: white;
+    padding: 40px;
+    overflow: hidden;  /* Para contener los elementos con float */
+    border-top: 4px solid #f4d743;
+    margin-top: auto; /* Para que el footer se quede al final de la página */
+    clear: both;
+}
+
+footer p {
+    float: left;    /* Texto a la izquierda */
+    margin: 0;
+    color: #f4f4f4;
+    margin-left: 20px;
+}
+
+footer img {
+    float: right;        
+    width: 120px;    /* para el tamaño de la imagen */
+    height: auto;
+    margin-right: 50px;
+}
+/*-------------------------------------------*/
+
+
+
+
+
+
+/*Estilos de Sobre-IAS*/
+/*-------------------------------------------*/
+article { /*estilo a toda la sección de la informacion institucional*/
+    padding: 0px;
+}
+
+/*cuadro para las primeras dos secciones*/
+.cuadro_institucional { 
+    width: 80%; /*ancho del cuadro*/
+    margin: 40px auto; /*Centrar el cuadro*/
+    background-color: #ffffff;
+    border: 2px solid #61892F;/* Borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 30px; /* Espacio entre el textoy el borde */
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1); /* Sombra */
+}
+/* Estilo para los títulos dentro del cuadro */
+.cuadro_institucional h2 {
+    color: #61892F;  
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    text-align: center;
+}
+.cuadro_institucional h3 {
+    color: #4a6216;       
+    margin-bottom: 5px;
+    text-align:center;
+}
+.cuadro_institucional p{
+    text-align:center;
+}
+
+/*cuadro para la ultima seccion-tabla*/
+.tabla {
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #61892F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; /*centra el titulo*/
+}
+table {
+    width: 100%; /*para que ocupe todo el ancho del cuadro*/
+    margin-top: 20px;
+}
+/*estilo al encabezado de la tabla*/
+thead {
+    background-color:#61892F;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #dddddd; /* borde de las filas */
+    padding: 12px; /* espacio dentro de las celdas */
+    text-align:center;
+}
+
+
+
+/*Estilos de Funciones*/
+/*-------------------------------------------*/
+.titulo_b {
+    text-align: center;
+    color:#61892F;
+    margin-top: 20px;
+}
+   
+main > p { /*estilo al primer parrafo del main bajo el titulo*/
+    text-align: center;
+    width: 70%;
+    margin:0 auto 30px auto; /* para centrar el parrafo y agregar espacio abajo */
+    font-style: italic; /* para darle un estilo diferente al primer parrafo */
+}
+
+/*estilo cuadro izquierdo*/
+.cuadro_izquierdo{
+    float: left;          /* Lo pone a la izquierda */
+    width: 50%;           /* Ocupa la mitad de la pantalla */
+    margin-left: 5%;      /* Espacio desde el borde izquierdo */
+    background-color: #ffffff;
+    border: 2px solid #61892F;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    
+}
+.cuadro_izquierdo h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #61892F;
+}
+
+.cuadro_izquierdo ul {
+    list-style-type: none; /* Quitar los puntos */
+}
+
+.cuadro_izquierdo li {
+    text-align: center
+}
+.cuadro_izquierdo p {
+    text-align: center;
+}
+
+/*estilo cuadro derecho*/
+.cuadro_derecho{
+    float: right;         /* Lo pone a la derecha */
+    width: 35%;           /* Ocupa el 40% de la pantalla */
+    margin-right: 5%;     /* Espacio desde el borde derecho */
+}
+
+/*estilo para el cuadro de compromiso social, cuadro derecho*/
+.contenedor_compromiso {
+    background-color: #ffffff;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    padding: 15px;
+   margin-bottom: 20px; /* Espacio debajo del cuadro */
+}
+.contenedor_compromiso ol{
+    list-style-type: none;
+}
+.contenedor_compromiso h3{
+    text-align: center;
+}
+/* Ajuste de la imagen para que no se salga de su cuadro */
+.columna_derecha img {
+    width: 100%;          /* Se adapta al ancho de la columna derecha */
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para el mensaje importante */
+aside {
+    background-color: #f4d743;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    clear: none;          /* Permite que siga flotando al lado de la columna izquierda */
+}
+
+/* arreglo de floats para que no choquen con el footer */
+footer {
+    clear: both;     /* Empuja el footer abajo de las columnas */
+}
+
+/*-------------------------------------------
+Estilos de Contacto
+-------------------------------------------*/
+
+/* Título principal centrado */
+main h2 {
+    text-align: center;
+    color: #61892F;
+    margin: 30px 0;
+}
+
+/* Cuadro para la información de oficinas (Address) */
+address {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    border-left: 5px solid #61892F; 
+    padding: 20px;
+    font-style: normal; /* Quita la cursiva por defecto de address */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contenedor del Formulario */
+#formulario-contacto {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #2c3e50;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+#formulario-contacto h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Estilo para los párrafos dentro del form para que actúen como filas */
+#formulario-contacto p {
+    margin-bottom: 15px;
+    text-align: left; /* Para que no herede el justify del main */
+}
+
+/* Estilo de etiquetas (Labels) */
+#formulario-contacto label {
+    display: block;      /* Hace que el label esté arriba del input */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Estilo de los campos de entrada e inputs */
+#formulario-contacto input, 
+#formulario-contacto select, 
+#formulario-contacto textarea {
+    width: 95%;          /* Casi todo el ancho del cuadro */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* El botón de enviar */
+.btn-enviar {
+    background-color: #61892F;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto 0 auto; /* Lo centra */
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #f4d743;
+    color: #222;
+}
+
+/* Sección de Horarios Especiales (Details) */
+details {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #61892F;
+}
+
+/* Sección del Mapa centrado */
+main section:last-of-type {
+    text-align: center;
+    margin: 40px 0;
+}
+
+main section:last-of-type img {
+    border: 3px solid #2c3e50;
+    border-radius: 10px;
+    max-width: 90%; /* Para que sea responsivo si achican la ventana */
+    height: auto;
+}
+/* Centrado de los títulos de sección en Contacto */
+main section h3 {
+    width: 60%;          /* Mismo ancho que tus cuadros y formulario */
+    margin: 20px auto;   /* Centra el bloque del título */
+    text-align: left;    /* Mantiene el texto a la izquierda dentro del bloque*/
+    color: #2c3e50;   
+}
