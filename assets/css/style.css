@@ -394,6 +394,9 @@ address {
     border: 2px solid #2c3e50;
     border-radius: 12px;
     padding: 30px;
+    display:flex;
+    flex-wrap: wrap; /*para que elementos bajen a la siguiente fila*/
+    gap:15px; /*espacio de 15 entre cada campo*/
 }
 
 #formulario-contacto h3 {
@@ -403,8 +406,9 @@ address {
 
 /* Estilo para los párrafos dentro del form para que actúen como filas */
 #formulario-contacto p {
-    margin-bottom: 15px;
-    text-align: left; /* Para que no herede el justify del main */
+    width: 100%;/* cada párrafo ocupa toda la fila */
+    /*cada input y label estan dentro de un p, todos ocupan 100%*/
+    margin: 0px;
 }
 
 /* Estilo de etiquetas (Labels) */
