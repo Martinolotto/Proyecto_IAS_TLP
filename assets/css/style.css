@@ -44,7 +44,11 @@ a {
 /*-------------------------------*/
 
 /* Estilos para el menu principal*/
-
+/* Flexbox para el menú de navegación
+   display: flex activa el modo flexbox
+  justify-content: space-around distribuye los elementos con espacio uniforme alrededor
+  list-style: none elimina los puntos de la lista
+*/
 /*para la lista*/
 #menu_principal ul {
     list-style-type: none; /*sacar puntos*/
@@ -180,6 +184,11 @@ Estilo a las clases del main del index.html*/
 
 /*-----------------------
 Estilos del pie de pagina*/
+/* Flexbox para el footer
+   - display: flex activa el modo flexbox
+   - flex-direction: column apila el contenido verticalmente
+   - align-items: center centra todo el contenido horizontalmente
+*/
 footer {
     background-color: #61892F;
     color: white;
@@ -188,6 +197,9 @@ footer {
     border-top: 4px solid #f4d743;
     margin-top: auto; /* Para que el footer se quede al final de la página */
     clear: both;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
@@ -304,7 +316,11 @@ main > p { /*estilo al primer parrafo del main bajo el titulo*/
     margin-top: 0;
     color: #61892F;
 }
-
+/* Grid para la lista de funciones
+   - display: grid activa el modo grid
+   - grid-template-columns: 1fr 1fr crea 2 columnas de igual tamaño
+   - gap: 20px agrega espacio de 20px entre los elementos
+*/
 .cuadro_izquierdo ul {
     list-style-type: none; /* Quitar los puntos */
     display:grid;
@@ -411,7 +427,12 @@ address {
     margin: 0px;
 }
 
-/* Estilo de etiquetas (Labels) */
+/* Estilo de etiquetas Labels */
+/* Flexbox para el formulario de contacto
+  display: flex activa el modo flexbox
+  lex-wrap: wrap permite que los elementos bajen a la siguiente fila
+  gap: 15px agrega espacio de 15px entre cada campo
+*/
 #formulario-contacto label {
     display: block;      /* Hace que el label esté arriba del input */
     font-weight: bold;
@@ -485,6 +506,10 @@ main section h3 {
 }
 /*------------------------*/
 /* Grid general para la página*/
+/*display: grid activa el modo grid
+   grid-template-rows define 4 filas: header, nav, main y footer
+   min-height: 100vh hace que la página ocupe toda la altura de la ventana
+*/
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto; /*define 4 filas, 1fr en el main hace que ocupe todo el espacio */
