@@ -479,3 +479,10 @@ main section h3 {
     text-align: left;    /* Mantiene el texto a la izquierda dentro del bloque*/
     color: #2c3e50;   
 }
+/*------------------------*/
+/* Grid general para la página*/
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /*define 4 filas, 1fr en el main hace que ocupe todo el espacio */
+    min-height: 100vh;/*la página ocupa toda la altura de la ventana*/
+}
