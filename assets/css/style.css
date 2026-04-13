@@ -52,18 +52,15 @@ a {
     padding: 15px 0px; /*alto del renglón*/
     text-align: center;
     margin: 0px;
-    overflow: hidden; /*  Para que el fondo cubra a los elementos con float */
     width: 100%;
+    display: flex;
+    justify-content: space-around /* distribuye cada elemento con el mismo epacio automaticamente juntocon el flex*/
 }
 
 /*para cada elemento*/
 #menu_principal ul li{
-    float: left; /* para ponerlos uno al lado del otro */
     width: 18%;
     text-align: center;
-}
-#menu_principal ul li:first-child {
-    margin-left: 14%; /* para que el primer elemento no quede pegado al borde y centramos el resto*/
 }
 
 /*a cada link*/
