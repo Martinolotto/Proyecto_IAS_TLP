@@ -7,100 +7,120 @@ Fecha: 6-04-2026
 
 <!doctype html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre el IAS - Instituto de Asistencia Social</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-<body>
-         <!-- uso <header> para el encabezado principal, 
+  <body>
+    <!-- uso <header> para el encabezado principal, 
          <nav> para el menú de navegación ,
          <main> para el contenido central 
          <article> para agrupar la información institucional.  -->
-
-    <header> 
-        <img src="../assets/img/logo-png.png" alt="logo oficial del IAS">
+    <div class="container">
+      <header>
+        <img src="../assets/img/logo-png.png" alt="logo oficial del IAS" />
         <h1>Instituto de Asistencia Social - IAS</h1>
         <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
-    </header>
+      </header>
 
-    <nav id="menu_principal">
+      <nav id="menu_principal">
         <ul>
-                 <!-- Para ir al index pongo../ 
+          <!-- Para ir al index pongo../ 
                  Para las otras páginas que están en la misma carpeta, solo pongo el nombre  -->
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="sobre-ias.html">Sobre el IAS</a></li>
-            <li><a href="funciones.html">Funciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="sobre-ias.html">Sobre el IAS</a></li>
+          <li><a href="funciones.html">Funciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <main>
+      <main>
         <!--contenido en un article porque es información institucional coherente-->
         <article>
+          <!-- seccion 1 -->
+          <div class="cuadro_institucional">
+            <section>
+              <h2>Historia del IAS</h2>
+              <p>
+                El Instituto de Asistencia Social de Formosa tiene una larga
+                trayectoria regulando los juegos de azar en la provincia,
+                transformando el entretenimiento en
+                <strong>ayuda directa</strong> para los formoseños.
+              </p>
+              <p>
+                Desde sus inicios, se ha enfocado en la transparencia y en el
+                compromiso social, siendo un pilar fundamental para el
+                financiamiento de programas de salud y educación.
+              </p>
+            </section>
 
-            <!-- seccion 1 -->
-               <div class="cuadro_institucional">
-                  <section>
-                     <h2>Historia del IAS</h2>
-                     <p>El Instituto de Asistencia Social de Formosa tiene una larga trayectoria regulando los juegos de azar en la provincia, transformando el entretenimiento en <strong>ayuda directa</strong> para los formoseños.</p>
-                     <p>Desde sus inicios, se ha enfocado en la transparencia y en el compromiso social, siendo un pilar fundamental para el financiamiento de programas de salud y educación.</p>
-                  </section>
-                
-           <!-- seccion 2 -->
-                    <section>
-                     <h2>Misión y Visión</h2>
-                <!-- Subsecciones con h3 s-->
-                         <h3>Misión</h3>
-                           <p>Nuestra misión es regular y fiscalizar los juegos de azar de manera responsable, garantizando que los fondos recaudados vuelvan a la comunidad en forma de beneficios sociales.</p>
-                
-                            <h3>Visión</h3>
-                              <p>Ser un organismo modelo en gestión transparente, promoviendo el <em>juego responsable</em> y la prevención de la ludopatía en toda la provincia.</p>
-                               </section>
-               </div>
- <!-- seccion 3 -->
-<div class="tabla">
-    <section>
-        <h2>Información de Atención</h2>
-        <!--  Se utiliza una tabla (table) para organizar datos complejos
+            <!-- seccion 2 -->
+            <section>
+              <h2>Misión y Visión</h2>
+              <!-- Subsecciones con h3 s-->
+              <h3>Misión</h3>
+              <p>
+                Nuestra misión es regular y fiscalizar los juegos de azar de
+                manera responsable, garantizando que los fondos recaudados
+                vuelvan a la comunidad en forma de beneficios sociales.
+              </p>
+
+              <h3>Visión</h3>
+              <p>
+                Ser un organismo modelo en gestión transparente, promoviendo el
+                <em>juego responsable</em> y la prevención de la ludopatía en
+                toda la provincia.
+              </p>
+            </section>
+          </div>
+          <!-- seccion 3 -->
+          <div class="tabla">
+            <section>
+              <h2>Información de Atención</h2>
+              <!--  Se utiliza una tabla (table) para organizar datos complejos
              Thead define los títulos de las columnas y Tbody contiene los datos de las filas
              mejora la legibilidad -->
-        <table>
-            <thead>
-                <tr>
+              <table>
+                <thead>
+                  <tr>
                     <th>Área</th>
                     <th>Responsable</th>
                     <th>Horario de Atención</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                     <td>Administración Central</td>
                     <td>Área Contable</td>
                     <td>08:00 a 13:00 hs</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>Juegos de Azar</td>
                     <td>Fiscalización</td>
                     <td>07:30 a 12:30 hs</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>Asistencia Social</td>
                     <td>Acción Comunitaria</td>
                     <td>08:00 a 12:00 hs</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</div>
-</article>
-</main>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </article>
+      </main>
 
-<footer> 
-    <p>&copy; 2026 Instituto de Asistencia Social - Formosa. Todos los derechos reservados.</p>
-    <img src="../assets/img/logo-png.png" alt="logo oficial del IAS">
-</footer>
-</body>
+      <footer>
+        <p>
+          &copy; 2026 Instituto de Asistencia Social - Formosa. Todos los
+          derechos reservados.
+        </p>
+        <img src="../assets/img/logo-png.png" alt="logo oficial del IAS" />
+      </footer>
+    </div>
+  </body>
 </html>

@@ -473,10 +473,9 @@ main section:last-of-type img {
     max-width: 90%; /* Para que sea responsivo si achican la ventana */
     height: auto;
 }
-/* Centrado de los títulos de sección en Contacto */
 main section h3 {
-    width: 60%;          /* Mismo ancho que tus cuadros y formulario */
-    margin: 20px auto;   /* Centra el bloque del título */
+    width: 60%;        
+    margin: 20px auto;  
     text-align: left;    /* Mantiene el texto a la izquierda dentro del bloque*/
     color: #2c3e50;   
 }
