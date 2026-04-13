@@ -307,6 +307,9 @@ main > p { /*estilo al primer parrafo del main bajo el titulo*/
 
 .cuadro_izquierdo ul {
     list-style-type: none; /* Quitar los puntos */
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*crea dos columnas del mismo tamaño*/
+    gap: 20px; /*separacion entre elementos*/
 }
 
 .cuadro_izquierdo li {
